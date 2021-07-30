@@ -122,7 +122,7 @@ section .container {
 .sec_title {
     position: relative;
     z-index: 55;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
     border-bottom: 2px solid rgba(0, 0, 0, 0.08);
     padding-top: 32px;
     padding-bottom: 25px;
