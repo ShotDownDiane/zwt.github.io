@@ -1,80 +1,67 @@
-.timeline-small {
-    max-width: 350px;
-    max-height: 630px;
-    overflow: hidden;
-    margin: 30px auto 0;
-    box-shadow: 0 0 40px #a0a0a0;
-    font-family: 'Open Sans', sans-serif;
-}
-.color-overlay {
-    padding: 3em 2em;
-    box-sizing: border-box;
-    background: rgba(123, 94, 155, 0.5);
-}
-.timeline-small-body ul {
-    padding: 1em 0 0 2em;
-    margin: 0;
-    list-style: none;
-    position: relative;
-}
-.timeline-small-body ul::before {
-    content: ' ';
-    height: 100%;
-    width: 5px;
-    background-color: #d9d9d9;
-    position: absolute;
-    top: 0;
-    left: 2.4em;
-    z-index: -1;
-}
-.timeline-small-body li div {
-    display: inline-block;
-    margin: 1em 0;
-    vertical-align: top;
-}
-.timeline-small-body .bullet {
-    width: 1rem;
-    height: 1rem;
-    box-sizing: border-box;
-    border-radius: 50%;
-    background: #fff;
-    z-index: 1;
-    margin-right: 1rem;
-    margin-top: 7%;
-}
-.timeline-small-body .bullet.pink {
-    background-color: hotpink;
-    border: 3px solid #F93B69;
-}
-.timeline-small-body .bullet.green {
-    background-color: lightseagreen;
-    border: 3px solid #B0E8E2;
-}
-.timeline-small-body .bullet.blue {
-    background-color: aquamarine;
-    border: 3px solid cadetblue;
-}
-.timeline-small-body .bullet.orange {
-    background-color: salmon;
-    border: 3px solid #EB8B6E;
-}
-.timeline-small-body .date {
-    width: 23%;
-    font-size: 0.75em;
-    padding-top: 0.40rem;
-    padding-right: 2rem;
-}
-.timeline-small-body .desc {
-    width: 50%;
-}
-.timeline-small-body h3 {
-    font-size: 0.9em;
-    font-weight: 400;
-    margin: 0;
-}
-.timeline-small-body h4 {
-    margin: 0;
-    font-size: 0.7em;
-    font-weight: 400;
-    color: #808080;
-}
+		body {
+			font-size: 12px;
+		}
+		
+		ul li {
+			list-style: none;
+		}
+		.track-rcol {
+			width: 100%;
+			border: 1px solid #eee;
+		}
+		
+		.track-list {
+			margin: 20px;
+			padding-left: 5px;
+			position: relative;
+		}
+		
+		.track-list li {
+			position: relative;
+			padding: 9px 0 0 25px;
+			line-height: 18px;
+			border-left: 1px solid #d9d9d9;
+			color: #999;
+		}
+		
+		.track-list li.first {
+			color: red;
+			padding-top: 0;
+			border-left-color: #fff;
+		}
+		
+		.track-list li .node-icon {
+			position: absolute;
+			left: -6px;
+			top: 50%;
+			width: 11px;
+			height: 11px;
+			background: url(img/trank.png) -21px -72px no-repeat;
+		}
+		
+		.track-list li.first .node-icon {
+			background-position: 0 -72px;
+		}
+		
+		.track-list li .time {
+			margin-right: 20px;
+			position: relative;
+			top: 4px;
+			display: inline-block;
+			vertical-align: middle;
+		}
+		
+		.track-list li .txt {
+			position: relative;
+			top: 4px;
+			display: inline-block;
+			vertical-align: middle;
+		}
+		
+		.track-list li.first .time {
+			margin-right: 20px;
+		}
+		
+		.track-list li.first .txt {
+			max-width: 600px;
+		}
